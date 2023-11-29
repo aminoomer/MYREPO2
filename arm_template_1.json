@@ -35,3 +35,18 @@
         "frequency": "OneTime"
     }
 }
+{
+    "name": "publicIPAddress1",
+    "type": "Microsoft.Network/publicIPAddresses",
+    "apiVersion": "2018-08-01",
+    "location": "[resourceGroup().location]",
+    "tags": {
+        "displayName": "publicIPAddress1"
+    },
+    "properties": {
+        "publicIPAllocationMethod": "Dynamic",
+        "dnsSettings": {
+            "domainNameLabel": "dnsname1"
+        }
+    }
+}
